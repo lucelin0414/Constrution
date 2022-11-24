@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.imgslide_road{
+    height: 200px;
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgslide_road > a{
+    display: block;
+    position: absolute;
+}
+
+.imgtext_road{
+    height: 50px;
+    width: 500px;
+    position: absolute;
+/* 박스 요소의 margin-top -25px, margin-right 0px, margin-bottom 0px, */
+/* margin-left -150px 여백을 의미함. position:absolute를 지정하였으므로 */
+/* 상위 컨테이너를 기준으로 절대 좌표값을 가짐. */
+/* 부모 요소에 position:relative를 주고 자식 요소에 position:absolute */
+/* 적용한 후 left:50%, top:50%, margin-top을 height값의 1/2 음수값(-값), */
+/* margin-left를 width의 1/2 음수값(-값)을 주면 수평, 수직으로 동시에 */
+/* 가운데 정렬을 할 수 있음 */
+    margin: -25px 0 0 -250px;
+    left: 50%;
+    top: 35%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40, 40, 40, 0.5);
+}

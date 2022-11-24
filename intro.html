@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/intro.css">
+</head>
+<body>
+    <div id="wrapper">
+        <a href="#" class="tubular-play">재생</a>
+        <a href="#" class="tubular-pause">일시정지</a>
+        <a href="#" class="tubular-volume-up">소리 키우기</a>
+        <a href="#" class="tubular-volume-down">소리 줄이기</a>
+        <a href="#" class="tubular-mute">소리 끄기</a>
+    </div>
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <script src="javascript/jquery.tubular.1.0.js"></script>
+    <script>
+        $("document").ready(function() {
+            var options = {
+	            videoId : 'X4bh_IRyYuU',
+	            mute : true // Chrome 웹브라우저는 mute 음소거가 기본 설정되어 있음
+	        // 웹 실행 후 좌측 상단 "소리 키우기"를 클릭하면 소리가 들리게 됨.
+            };
+            $('#wrapper').tubular(options);
+        });
+    </script>
+</body>
+</html>

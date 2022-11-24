@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#wrapper{
+    position: absolute;
+    left: 40%;
+    top: 95%;
+}
+
+#wrapper a{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#wrapper a:hover{
+    background-color: white;
+    color: red;
+}
